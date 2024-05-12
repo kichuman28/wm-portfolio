@@ -34,7 +34,7 @@ const MyComponent = () => {
   return (
     <>
       <StyledHeader ref={headerRef}>
-        <a href="#" className="logo">XBEE.AI</a>
+        <a href="#" className="logo">WHITE MATRIX</a>
         <ul>
           <li><a href="#home" onClick={toggle}>HOME</a></li>
           <li><a href="#about" onClick={toggle}>ABOUT</a></li>
