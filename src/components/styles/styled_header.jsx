@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 20px 80px;
   z-index: 1000;
 
   &.sticky {
@@ -35,7 +35,7 @@ export const StyledHeader = styled.header`
   }
 
   img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     margin-right: 10px;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */

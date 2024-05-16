@@ -57,6 +57,23 @@ export const StyledBanner = styled.section`
     padding: 10px;
   }
 
+  .image-overlay-button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .image-overlay-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+  }
   .slick-prev,
   .slick-next {
     top: 50%; /* Position arrows vertically centered */
