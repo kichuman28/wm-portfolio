@@ -1,6 +1,8 @@
 // Header.jsx
 import React, { useRef, useEffect } from 'react';
 import StyledHeader from './styles/styled_header';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -31,10 +33,10 @@ const Header = () => {
     <StyledHeader ref={headerRef}>
       <img src="/assets/logo.png" alt="logo" />
       <ul>
-        <li><a href="#home" onClick={toggle}>What We Do</a></li>
+        <li><a href="/" onClick={toggle}>What We Do</a></li>
         <li><a href="#about" onClick={toggle}>Who We Are</a></li>
         <li><a href="#services" onClick={toggle}>Insights</a></li>
-        <li><a href="#contact" onClick={toggle}>Careers</a></li>
+        <li><Link to="/career">Careers</Link></li>
       </ul>
       <div className="toggle" onClick={toggle}></div>
     </StyledHeader>
