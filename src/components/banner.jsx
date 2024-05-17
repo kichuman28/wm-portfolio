@@ -11,6 +11,9 @@ const Banner = ({ settings }) => {
   return (
     <StyledBanner id='home'>
       {/* React Slick slider */}
+      <div className="banner-heading">
+        <h2>Transforming Businesses</h2>
+      </div>
       <Slider {...settings}>
         <div>
           <img src="/assets/ai.png" alt="Slide 1" />

@@ -1,3 +1,5 @@
+// styled_banner.js or equivalent CSS/Styled Components file
+
 import styled from 'styled-components';
 
 export const StyledBanner = styled.section`
@@ -5,9 +7,23 @@ export const StyledBanner = styled.section`
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column; /* Change to column direction */
   justify-content: center;
   align-items: center;
   z-index: 1;
+
+  .banner-heading {
+    padding-left: 170px;
+    margin-bottom: 20px; /* Space between the heading and the slider */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure it takes up the full width */
+  
+    h2 {
+      font-size: 2rem; /* Adjust the size as needed */
+      color: #000000; /* Adjust the color if necessary */
+    }
+  }
+  
 
   .slick-slider {
     width: 80%;
@@ -74,6 +90,7 @@ export const StyledBanner = styled.section`
     background-color: rgba(255, 255, 255, 0.2);
     color: #000;
   }
+
   .slick-prev,
   .slick-next {
     top: 50%; /* Position arrows vertically centered */

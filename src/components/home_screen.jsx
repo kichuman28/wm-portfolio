@@ -21,6 +21,7 @@ const MyComponent = () => {
     <>
       <Header />
       <Banner settings={settings} /> {/* Use the Banner component */}
+
     </>
   );
 };
