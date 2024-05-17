@@ -29,7 +29,13 @@ const Banner = ({ settings }) => {
           <img src="/assets/app2.jpg" alt="Slide 3" />
           <div className="image-overlay">
             <button className="image-overlay-button" onClick={() => navigate("/mobile")}>App Development</button>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/software1.jpg" alt="Slide 4" />
+          <div className="image-overlay">
 
+            <button className="image-overlay-button">Learn More</button>
           </div>
         </div>
       </Slider>
