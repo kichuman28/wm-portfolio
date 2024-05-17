@@ -13,15 +13,12 @@ body {
     padding-top: 120px;
     padding-left: 80px;
     padding-right: 80px;
-    /* Ensure container takes full height */
     box-sizing: border-box;
-    /* Include padding in the element's total width and height */
     background-image: url('/public/assets/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    /* Prevent overflow */
     position: relative;
 }
 
@@ -121,11 +118,8 @@ body {
     background-color: #388d8d;
 }
 
-
-
 .m-container {
     padding-top: 120px;
-
     padding-right: 80px;
     display: flex;
     justify-content: flex-start;
@@ -147,10 +141,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: #345879;
-    opacity: 60%;
+    opacity: 80%;
     z-index: 1;
 }
-
 
 .m-content {
     width: 75%;
@@ -169,14 +162,12 @@ body {
 .m-custom {
     font-size: 27px;
     margin: 0;
-    /* Remove margins to reduce gap */
     padding: 0;
 }
 
 .m-mobile {
     font-size: 38px;
     margin: 0;
-    /* Remove margins to reduce gap */
     padding: 0;
 }
 
@@ -185,7 +176,6 @@ body {
     margin-bottom: 30px;
     text-align: justify;
     color: white;
-
 }
 
 .m-button-container {
@@ -206,5 +196,244 @@ body {
 
 .m-schedule-button:hover {
     background-color: #388d8d;
-    /* Darker color on hover */
+}
+
+.s-container {
+    padding-top: 120px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    height: 100vh;
+    position: relative;
+    background-image: url('/public/assets/software.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #345879;
+    opacity: 80%;
+    z-index: 1;
+}
+
+.v-container {
+    padding-top: 120px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    height: 100vh;
+    position: relative;
+    background-image: url('/public/assets/voip2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.v-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #102447;
+    opacity: 80%;
+    z-index: 1;
+}
+
+/* ai page styling */
+.a-container {
+    padding-top: 120px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    height: 100vh;
+    position: relative;
+    background-image: url('/public/assets/ai1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.a-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #102447;
+    opacity: 80%;
+    z-index: 1;
+}
+
+.a-gmatrix-image {
+    position: absolute;
+    top: 300px;
+    left: 38%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 1000px;
+    height: auto;
+}
+
+.a-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+
+    .c-container,
+    .m-container,
+    .s-container,
+    .v-container,
+    .a-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .c-form,
+    .c-text-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .c-container,
+    .m-container,
+    .s-container,
+    .v-container,
+    .a-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .c-form,
+    .c-text-content {
+        width: 100%;
+    }
+
+    .m-heading {
+        font-size: 36px;
+    }
+
+    .m-custom,
+    .m-mobile {
+        font-size: 24px;
+    }
+
+    .m-paragraph {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .c-container,
+    .m-container,
+    .s-container,
+    .v-container,
+    .a-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 80px;
+    }
+
+    .c-text-content {
+        width: 100%;
+    }
+
+    .c-heading {
+        font-size: 28px;
+    }
+
+    .c-paragraph {
+        font-size: 16px;
+    }
+
+    .c-form {
+        width: 100%;
+    }
+
+    .m-heading {
+        font-size: 30px;
+    }
+
+    .m-custom,
+    .m-mobile {
+        font-size: 20px;
+    }
+
+    .m-paragraph {
+        font-size: 14px;
+    }
+
+    .m-schedule-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .c-container,
+    .m-container,
+    .s-container,
+    .v-container,
+    .a-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 120px;
+    }
+
+    .c-heading {
+        font-size: 24px;
+    }
+
+    .c-paragraph {
+        font-size: 14px;
+    }
+
+    .c-form {
+        width: 100%;
+    }
+
+    .m-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .m-heading {
+        font-size: 24px;
+    }
+
+    .m-custom,
+    .m-mobile {
+        font-size: 18px;
+    }
+
+    .m-paragraph {
+        font-size: 12px;
+    }
+
+    .m-schedule-button {
+        font-size: 14px;
+    }
 }
