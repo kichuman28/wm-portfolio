@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wm-portfolio/static/css/main.f088a435.css",
+    "main.js": "/wm-portfolio/static/js/main.8d403a94.js",
+    "static/js/453.affe5fa3.chunk.js": "/wm-portfolio/static/js/453.affe5fa3.chunk.js",
+    "static/media/software.jpg": "/wm-portfolio/static/media/software.86c66569a3e124d88c5b.jpg",
+    "static/media/voip2.jpg": "/wm-portfolio/static/media/voip2.d362a9f1bca4ddf46c67.jpg",
+    "static/media/ai1.jpg": "/wm-portfolio/static/media/ai1.856d917af0de082d5f25.jpg",
+    "static/media/mobile.png": "/wm-portfolio/static/media/mobile.600e3218dee2749d7250.png",
+    "static/media/bg.png": "/wm-portfolio/static/media/bg.26da33d7dc920149bcc3.png",
+    "static/media/bg3.png": "/wm-portfolio/static/media/bg3.70d8fd59ec8f82d8714a.png",
+    "static/media/slick.svg": "/wm-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/wm-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/wm-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/wm-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/wm-portfolio/index.html",
+    "main.f088a435.css.map": "/wm-portfolio/static/css/main.f088a435.css.map",
+    "main.8d403a94.js.map": "/wm-portfolio/static/js/main.8d403a94.js.map",
+    "453.affe5fa3.chunk.js.map": "/wm-portfolio/static/js/453.affe5fa3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f088a435.css",
+    "static/js/main.8d403a94.js"
+  ]
+}
