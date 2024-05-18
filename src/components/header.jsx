@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from 'react';
 import StyledHeader from './styles/styled_header';
 import { Link } from 'react-router-dom';
+import LG from "../assets/logo.png";
 
 
 const Header = () => {
@@ -31,11 +32,11 @@ const Header = () => {
 
   return (
     <StyledHeader ref={headerRef}>
-      <Link to="/">
-        <img src="/assets/logo.png" alt="logo" />
+      <Link to="/wm-portfolio">
+        <img src={LG} alt="logo" />
       </Link>      
       <ul>
-        <li><a href="/" onClick={toggle}>What We Do</a></li>
+        <li><a href="/wm-portfolio" onClick={toggle}>What We Do</a></li>
         <li><a href="#about" onClick={toggle}>Who We Are</a></li>
         <li><a href="#services" onClick={toggle}>Insights</a></li>
         <li><Link to="/career">Careers</Link></li>
