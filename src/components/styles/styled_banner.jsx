@@ -20,7 +20,7 @@ export const StyledBanner = styled.section`
   
     h2 {
       font-size: 2rem; /* Adjust the size as needed */
-      color: #000000; /* Adjust the color if necessary */
+      color: white; /* Adjust the color if necessary */
     }
   }
   

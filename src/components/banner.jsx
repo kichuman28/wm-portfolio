@@ -18,27 +18,25 @@ const Banner = ({ settings }) => {
         <div>
           <img src="/assets/ai.png" alt="Slide 1" />
           <div className="image-overlay">
-            <button className="image-overlay-button">Learn More</button>
+            <button className="image-overlay-button" onClick={() => navigate("/ai")}>AI</button>
           </div>
         </div>
         <div>
           <img src="/assets/customer1.jpg" alt="Slide 2" />
           <div className="image-overlay">
-
-            <button className="image-overlay-button">Learn More</button>
+            <button className="image-overlay-button" onClick={() => navigate("/voip")}>VOIP</button>
           </div>
         </div>
         <div>
           <img src="/assets/app2.jpg" alt="Slide 3" />
           <div className="image-overlay">
-            <button className="image-overlay-button" onClick={() => navigate("/mobile")}>App Development</button>
+            <button className="image-overlay-button" onClick={() => navigate("/mobile")}>Mobile App Development</button>
           </div>
         </div>
         <div>
           <img src="/assets/software1.jpg" alt="Slide 4" />
           <div className="image-overlay">
-
-            <button className="image-overlay-button">Learn More</button>
+            <button className="image-overlay-button" onClick={() => navigate("/software")}>Software Development</button>
           </div>
         </div>
       </Slider>
