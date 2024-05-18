@@ -20,7 +20,7 @@ const Banner = ({ settings }) => {
           <button className="image-overlay-button" aria-label="Navigate to AI" onClick={() => navigate("/ai")}>Learn More</button>
         </div>
         <div>
-          <img src="/assets/customer1.jpg" alt="VOIP Slide" onError={(e) => e.target.src = '/assets/fallback.png'} />
+          <img src="/assets/voip1.jpg" alt="VOIP Slide" onError={(e) => e.target.src = '/assets/fallback.png'} />
           <button className="image-overlay-button" aria-label="Navigate to VOIP" onClick={() => navigate("/voip")}>Learn More</button>
         </div>
         <div>

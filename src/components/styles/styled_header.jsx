@@ -35,7 +35,7 @@ export const StyledHeader = styled.header`
   }
 
   img {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
     margin-right: 10px;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
@@ -63,6 +63,7 @@ export const StyledHeader = styled.header`
         color: #FFFFFF;
         letter-spacing: 1px;
         font-weight: 600;
+        font-size: 20px;
 
         &:hover {
           border-bottom: 2px solid #47bfbf;
