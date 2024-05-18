@@ -280,19 +280,23 @@ body {
     z-index: 1;
 }
 
-.a-gmatrix-image {
-    position: absolute;
-    top: 300px;
-    left: 38%;
-    transform: translateX(-50%);
+.a-gmatrix-text {
+    padding-left: 350px;
+    color: white;
+    font-size: 10em; /* Adjust the size as needed */
+    font-weight: bold;
     cursor: pointer;
-    width: 1000px;
-    height: auto;
 }
 
 .a-button-container {
     display: flex;
     justify-content: center;
+}
+
+.a-gmatrix-g {
+    color: transparent;
+    -webkit-text-stroke: 5px white; /* Creates a white border around the text */
+    font-size: 1.1em; /* Slightly larger for emphasis */
 }
 
 
@@ -346,6 +350,17 @@ body {
 
 @media (max-width: 768px) {
 
+
+    .a-gmatrix-text {
+        padding-left: 350px;
+        padding-right: 200px;
+        color: white;
+        font-size: 5em; /* Adjust the size as needed */
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
     .c-container,
     .m-container,
     .s-container,
@@ -391,6 +406,15 @@ body {
 }
 
 @media (max-width: 576px) {
+
+    .a-gmatrix-text {
+        padding-left: 350px;
+        padding-right: 350px;
+        color: white;
+        font-size: 5em; /* Adjust the size as needed */
+        font-weight: bold;
+        cursor: pointer;
+    }
 
     .c-container,
     .m-container,

@@ -3,11 +3,11 @@ import React from 'react';
 import './components/style.css';
 import Career from './components/career';
 import MyComponent from './components/home_screen';
-import MobileApp from './components/mobileapp';
-import Software from './components/software';
+import MobileApp from './components/slider/mobileapp';
+import Software from './components/slider/software';
 import Schedule from './components/scheduleconvo';
-import Voip from './components/voip';
-import AI from './components/ai';
+import Voip from './components/slider/voip';
+import AI from './components/slider/ai';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {

@@ -31,7 +31,9 @@ const Header = () => {
 
   return (
     <StyledHeader ref={headerRef}>
-      <img src="/assets/logo.png" alt="logo" />
+      <Link to="/">
+        <img src="/assets/logo.png" alt="logo" />
+      </Link>      
       <ul>
         <li><a href="/" onClick={toggle}>What We Do</a></li>
         <li><a href="#about" onClick={toggle}>Who We Are</a></li>

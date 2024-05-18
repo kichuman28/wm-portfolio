@@ -1,4 +1,4 @@
-// styled_banner.js or equivalent CSS/Styled Components file
+// styled_banner.js
 
 import styled from 'styled-components';
 
@@ -7,7 +7,7 @@ export const StyledBanner = styled.section`
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Change to column direction */
+  flex-direction: column; /* Stacks heading and slider vertically */
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -20,10 +20,9 @@ export const StyledBanner = styled.section`
   
     h2 {
       font-size: 2rem; /* Adjust the size as needed */
-      color: white; /* Adjust the color if necessary */
+      color: #000000; /* Adjust the color if necessary */
     }
   }
-  
 
   .slick-slider {
     width: 80%;
@@ -46,48 +45,32 @@ export const StyledBanner = styled.section`
     transform: scale(1.1);
   }
 
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 20px; /* Add rounded corners */
-  }
-
-  .slick-slide:hover .image-overlay {
-    opacity: 1;
-  }
-
-  .image-overlay-text {
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-  }
-
   .image-overlay-button {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: background-color 0.3s, color 0.3s;
+    opacity: 0; /* Initially hide the button */
+    visibility: hidden; /* Ensure it's not focusable when hidden */
+  }
+
+  .slick-slide:hover .image-overlay-button {
+    opacity: 1; /* Show button on hover */
+    visibility: visible; /* Make it focusable on hover */
   }
 
   .image-overlay-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #000;
   }
 
@@ -110,26 +93,27 @@ export const StyledBanner = styled.section`
     .slick-slider {
       width: 90%;
     }
-
-    .image-overlay-text {
-      font-size: 20px; /* Adjust the font size for smaller screens */
-    }
   }
 
   @media (max-width: 576px) {
+
+    .banner-heading {
+      h2 {
+        font-size: 1rem; /* Adjust the size as needed */
+      }
+    }
+
+    .image-overlay-button {
+      font-size: 15px;
+    }
+
     .slick-slider {
       width: 90%;
-      /* Change the slider to vertical */
-      flex-direction: column; /* Change flex direction to column */
     }
 
     .slick-prev,
     .slick-next {
       padding: 10px 5px; /* Adjust padding for smaller screens */
-      /* Adjust position of arrows for vertical slider */
-      top: initial;
-      bottom: 0;
-      transform: translateY(0);
     }
   }
 `;
