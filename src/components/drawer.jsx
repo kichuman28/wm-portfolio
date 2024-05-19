@@ -1,4 +1,3 @@
-// Drawer.jsx
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
@@ -18,6 +17,14 @@ const DrawerContainer = styled.div`
   padding: 20px;
   transition: transform 0.3s ease;
   transform: translateY(${props => (props.isOpen ? '0' : '-100%')});
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 const Content = styled.div`
@@ -26,8 +33,12 @@ const Content = styled.div`
   margin-left: 40px;
   margin-right: 40px;
   font-size: 1.2em; /* Adjust the font size as needed */
-`;
 
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    font-size: 1em;
+  }
+`;
 
 const Button = styled.button`
   font-size: 1.2em;
@@ -45,6 +56,13 @@ const Button = styled.button`
   &:hover {
     background-color: #47bfbf;
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+
+    position: static;
+    margin-top: 70px;
+    margin-left: 165px;
   }
 `;
 
