@@ -1,5 +1,3 @@
-// styled_banner.js
-
 import styled from 'styled-components';
 
 export const StyledBanner = styled.section`
@@ -13,7 +11,7 @@ export const StyledBanner = styled.section`
   z-index: 1;
 
   .banner-heading {
-    padding-left: 170px;
+    padding-left: 250px;
     margin-bottom: 20px; /* Space between the heading and the slider */
     text-align: left; /* Align text to the left */
     width: 100%; /* Ensure it takes up the full width */
@@ -25,7 +23,7 @@ export const StyledBanner = styled.section`
   }
 
   .slick-slider {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -76,17 +74,37 @@ export const StyledBanner = styled.section`
 
   .slick-prev,
   .slick-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
     top: 50%; /* Position arrows vertically centered */
     transform: translateY(-50%);
     z-index: 1;
   }
 
-  .slick-prev {
-    left: -30px; /* Adjust position of previous arrow */
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 50px; /* Adjust the size of the arrow icon */
+    color: #fff; /* Change arrow color */
   }
 
+
+
+  .slick-prev:hover:before,
+  .slick-next:hover:before {
+    color: #000; /* Change arrow color on hover */
+  }
+
+  .slick-prev {
+    left: -60px; /* Adjust as needed */
+  }
+  
   .slick-next {
-    right: -30px; /* Adjust position of next arrow */
+    right: -60px; /* Adjust as needed */
   }
 
   @media (max-width: 768px) {
@@ -96,7 +114,6 @@ export const StyledBanner = styled.section`
   }
 
   @media (max-width: 576px) {
-
     .banner-heading {
       h2 {
         font-size: 1rem; /* Adjust the size as needed */

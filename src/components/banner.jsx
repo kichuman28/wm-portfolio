@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick'; // Import React Slick library
 import 'slick-carousel/slick/slick.css'; // Import React Slick styles
 import 'slick-carousel/slick/slick-theme.css'; // Import React Slick theme styles
-import AIM from "../assets/AIM.png";
+import AIM from "../assets/AIM1.png";
 import voip1 from "../assets/voip1.jpg";
-import app2 from "../assets/app2.jpg";
-import software1 from "../assets/software1.jpg";
+import app2 from "../assets/app12.jpg";
+import software1 from "../assets/software12.jpg";
 
 
 const Banner = ({ settings }) => {

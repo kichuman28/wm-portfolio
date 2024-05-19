@@ -10,11 +10,11 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 20px 80px;
+  padding: 5px 80px;
   z-index: 1000;
 
   &.sticky {
-    padding: 5px 100px;
+    padding: 20px 100px;
     background: #345789;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
@@ -35,9 +35,10 @@ export const StyledHeader = styled.header`
   }
 
   img {
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
     margin-right: 10px;
+    margin-top: 20px;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
   }
   

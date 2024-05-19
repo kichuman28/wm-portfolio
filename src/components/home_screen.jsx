@@ -1,27 +1,36 @@
 // MyComponent.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './header';
-import Banner from './banner'; // Import the Banner component
-import 'slick-carousel/slick/slick.css'; // Import React Slick styles
-import 'slick-carousel/slick/slick-theme.css'; // Import React Slick theme styles
+import Banner from './banner';
+import Drawer from './drawer'; // Import the Drawer component
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const MyComponent = () => {
-  // Define settings for the React Slick slider
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to manage drawer visibility
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen); // Toggle drawer state
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false); // Close the drawer
+  };
+
   const settings = {
     dots: true,
     arrows: true,
     infinite: true,
     speed: 250,
-    slidesToShow: 3, // Display three slides at a time
+    slidesToShow: 3,
     slidesToScroll: 1,
-    // Add more settings as needed
   };
 
   return (
     <>
       <Header />
-      <Banner settings={settings} /> {/* Use the Banner component */}
-
+      <Banner settings={settings} />
+      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} /> {/* Render the Drawer component */}
     </>
   );
 };
