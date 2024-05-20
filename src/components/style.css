@@ -411,7 +411,7 @@ body {
         padding-left: 350px;
         padding-right: 350px;
         color: white;
-        font-size: 5em; /* Adjust the size as needed */
+        font-size: 5em; 
         font-weight: bold;
         cursor: pointer;
     }

@@ -100,11 +100,11 @@ export const StyledBanner = styled.section`
   }
 
   .slick-prev {
-    left: -60px; /* Adjust as needed */
+    left: -70px; /* Adjust as needed */
   }
   
   .slick-next {
-    right: -60px; /* Adjust as needed */
+    right: -70px; /* Adjust as needed */
   }
 
   @media (max-width: 768px) {
@@ -120,12 +120,36 @@ export const StyledBanner = styled.section`
       }
     }
 
+    .slick-prev { 
+      left: -50px;
+      top: 260px;
+    }
+    
+    .slick-next {
+      right: -45px;
+      top: 260px;
+    }
+
+    .banner-heading {
+      margin-top: 60px;
+      padding-left: 20px;
+      margin-bottom: 10px; /* Space between the heading and the slider */
+      text-align: center; /* Align text to the left */
+      width: 100%; /* Ensure it takes up the full width */
+    
+      h2 {
+        font-size: 2rem; /* Adjust the size as needed */
+        color: #FFFFFF; /* Adjust the color if necessary */
+      }
+    }
+  
+
     .image-overlay-button {
       font-size: 15px;
     }
 
     .slick-slider {
-      width: 90%;
+      width: 70%;
     }
 
     .slick-prev,

@@ -126,7 +126,7 @@ export const StyledHeader = styled.header`
   
     ul {
       position: absolute;
-      top: 59px;
+      top: 100px;
       left: 0;
       width: 100%;
       text-align: center;
@@ -168,11 +168,9 @@ export const StyledHeader = styled.header`
       color: #345789;
     }
   }  
+  
 
-  @media (max-width: 576px) {
-    & {
-      padding: 20px;
-    }
+
   }
 `;
 

@@ -10,7 +10,6 @@ import voip1 from "../assets/voip1.jpg";
 import app2 from "../assets/app12.jpg";
 import software1 from "../assets/software12.jpg";
 
-
 const Banner = ({ settings }) => {
   const navigate = useNavigate();
 
