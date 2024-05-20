@@ -11,14 +11,16 @@ export const StyledBanner = styled.section`
   z-index: 1;
 
   .banner-heading {
-    padding-left: 250px;
-    margin-bottom: 20px; /* Space between the heading and the slider */
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure it takes up the full width */
-  
+    width: 67%;
+    margin-bottom: 20px;
+
     h2 {
-      font-size: 2rem; /* Adjust the size as needed */
-      color: #FFFFFF; /* Adjust the color if necessary */
+      font-size: 2em;
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 
@@ -107,18 +109,15 @@ export const StyledBanner = styled.section`
     right: -70px; /* Adjust as needed */
   }
 
-  @media (max-width: 768px) {
-    .slick-slider {
-      width: 90%;
-    }
-  }
 
   @media (max-width: 576px) {
-    .banner-heading {
-      h2 {
-        font-size: 1rem; /* Adjust the size as needed */
-      }
+
+    .slick-slide {
+      padding: 20px;
     }
+
+
+
 
     .slick-prev { 
       left: -50px;
@@ -149,7 +148,7 @@ export const StyledBanner = styled.section`
     }
 
     .slick-slider {
-      width: 70%;
+      width: 90%;
     }
 
     .slick-prev,

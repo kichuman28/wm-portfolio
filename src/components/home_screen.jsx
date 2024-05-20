@@ -9,13 +9,14 @@ const MyComponent = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to manage drawer visibility
   const [settings, setSettings] = useState({
     dots: true,
-    arrows: true,
+    arrows: window.innerWidth >= 576, // Disable arrows for screens smaller than 576px
     infinite: true,
     speed: 250,
-    slidesToShow: window.innerWidth < 400 ? 1 : window.innerWidth < 576 ? 2 : 3,
+    slidesToShow: 3,
     slidesToScroll: 1,
     vertical: window.innerWidth < 576, // Set vertical orientation based on screen width less than 576px
-    swipe: true,
+    swipe: true , // Enable swipe gestures
+    swipeToSlide: true, // Enable swipe to slide
   });
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const MyComponent = () => {
       setSettings(prevSettings => ({
         ...prevSettings,
         vertical: window.innerWidth < 576, // Set vertical orientation based on screen width less than 576px
-        slidesToShow: window.innerWidth < 400 ? 1 : window.innerWidth < 576 ? 2 : 3, // Adjust slidesToShow based on screen width
+        arrows: window.innerWidth >= 576, // Disable arrows for screens smaller than 576px
       }));
     };
 
