@@ -1,4 +1,3 @@
-// src/pages/MobileApp.js
 import React from 'react';
 import '../style.css';
 import Header from '../header';
@@ -14,15 +13,31 @@ const Voip = () => {
                     <span className="m-custom">WHITE LINE</span> <br />
                     <span className="m-mobile">OFFSHORE CALLCENTRE</span>
                 </h1>
-                <p className="m-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur libero ac ullamcorper bibendum. Donec eu blandit ipsum, a interdum felis. Fusce ut nisl enim. Vestibulum elementum ut quam sed fringilla. Nulla blandit id dolor tincidunt viverra. Donec gravida ut mi sed efficitur.Nam massa eros, bibendum in sapien et, vehicula accumsan ipsum. In aliquam ligula et justo semper dignissim. Duis accumsan mauris eu elementum posuere. In gravida euismod ex, quis gravida erat mollis sit amet. Sed quis fringilla leo. Ut nec dolor tellus. Cras posuere euismod porta. In arcu metus, tincidunt quis rhoncus non, tincidunt sit amet nibh. Praesent laoreet felis et libero feugiat, bibendum blandit felis vestibulum.
-                </p>
-                <div className="m-button-container">
-                    <button className="m-schedule-button" onClick={() => navigate("/schedule")}>Schedule a Conversation</button>
+                <div className="m-paragraph">
+                    <p>Welcome to White Line Call Centre: Your Gateway to Efficient Customer Support. We offer affordable offshore call centre solutions tailored for businesses like yours.</p>
+
+                    <h3>Why Choose White Line Call Centre?</h3>
+                    <ul>
+                        <li>Cost-Effective: High-quality services at unbeatable prices.</li>
+                        <li>Global Reach: Expertise in setting up offshore call centres worldwide.</li>
+                        <li>24/7 Support: Round-the-clock assistance across time zones.</li>
+                        <li>Tailored Solutions: Customized services to meet your needs.</li>
+                    </ul>
+
+                    <h3>Our Services:</h3>
+                    <ul>
+                        <li>Call Centre Setup: Seamless transition to your new offshore call centre.</li>
+                        <li>Multilingual Support: Break language barriers with our diverse language support.</li>
+                        <li>24/7 Customer Support: Keep your business running smoothly at all times.</li>
+                        <li>Quality Assurance: Ensure consistent, high-quality service delivery.</li>
+                    </ul>
+
+                    <div className="m-button-container">
+                        <button className="m-schedule-button" onClick={() => navigate("/schedule")}>Schedule a Conversation</button>
+                    </div>
                 </div>
             </div>
         </div>
-
     );
 };
 

@@ -6,8 +6,8 @@ const DrawerContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px; /* Adjust height as needed */
-  background-color: rgba(16, 36, 71, 0.8); /* Adjust opacity here */
+  height: 500px;
+  background-color: rgba(16, 36, 71, 0.8);
   color: #fff;
   z-index: 1000;
   display: flex;
@@ -32,11 +32,16 @@ const Content = styled.div`
   margin-bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  font-size: 1.2em; /* Adjust the font size as needed */
+  font-size: 1.2em;
 
   @media (max-width: 768px) {
     margin-top: 40px;
     font-size: 1em;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 40px;
+    font-size: 0.9em;
   }
 `;
 
@@ -59,14 +64,19 @@ const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-
     position: static;
     margin-top: 70px;
     margin-left: 165px;
   }
+
+  @media (max-width: 576px) {
+    position: static;
+    margin-top: 5px;
+    margin-left: 165px;
+  }
 `;
 
-const Drawer = ({ isOpen, onClose }) => {
+const Drawer = ({ isOpen, onClose, content }) => {
   const drawerRef = useRef(null);
 
   useEffect(() => {
@@ -88,9 +98,7 @@ const Drawer = ({ isOpen, onClose }) => {
   return (
     <DrawerContainer isOpen={isOpen} ref={drawerRef}>
       <Content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur libero ac ullamcorper bibendum. Donec eu blandit ipsum, a interdum felis. Fusce ut nisl enim. Vestibulum elementum ut quam sed fringilla. Nulla blandit id dolor tincidunt viverra. Donec gravida ut mi sed efficitur.Nam massa eros, bibendum in sapien et, vehicula accumsan ipsum. In aliquam ligula et justo semper dignissim. Duis accumsan mauris eu elementum posuere. In gravida euismod ex, quis gravida erat mollis sit amet. Sed quis fringilla leo. Ut nec dolor tellus. Cras posuere euismod porta. In arcu metus, tincidunt quis rhoncus non, tincidunt sit amet nibh. Praesent laoreet felis et libero feugiat, bibendum blandit felis vestibulum.
-        </p>
+        <p>{content}</p>
       </Content>
       <Button onClick={onClose}>Know More</Button>
     </DrawerContainer>

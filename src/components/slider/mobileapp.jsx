@@ -12,17 +12,30 @@ const MobileApp = () => {
             <div className="m-content">
                 <h1 className="m-heading">
                     <span className="m-custom">Custom</span> <br />
-                    <span className="m-mobile">MOBILE APPLICATION<br />DEVELOPMENT</span>
+                    <span className="m-mobile">MOBILE APPLICATION DEVELOPMENT</span>
                 </h1>
                 <p className="m-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur libero ac ullamcorper bibendum. Donec eu blandit ipsum, a interdum felis. Fusce ut nisl enim. Vestibulum elementum ut quam sed fringilla. Nulla blandit id dolor tincidunt viverra. Donec gravida ut mi sed efficitur.Nam massa eros, bibendum in sapien et, vehicula accumsan ipsum. In aliquam ligula et justo semper dignissim. Duis accumsan mauris eu elementum posuere. In gravida euismod ex, quis gravida erat mollis sit amet. Sed quis fringilla leo. Ut nec dolor tellus. Cras posuere euismod porta. In arcu metus, tincidunt quis rhoncus non, tincidunt sit amet nibh. Praesent laoreet felis et libero feugiat, bibendum blandit felis vestibulum.
+                    At WHITE MATRIX, we specialize in developing custom mobile applications tailored to your needs. With a skilled team, we deliver:
                 </p>
+                <ul className="m-list">
+                    <li>Customized Solutions: Tailored apps aligned with your goals.</li>
+                    <li>Expertise: Experienced professionals for exceptional results.</li>
+                    <li>Quality Assurance: Rigorous testing ensures reliability.</li>
+                    <li>Client-Centric Approach: Your satisfaction is our priority.</li>
+                </ul>
+                <h2 className="m-subheading">Our Services</h2>
+                <ul className="m-list">
+                    <li>Mobile App Development: iOS, Android, or cross-platform solutions.</li>
+                    <li>UI/UX Design: Visually appealing and intuitive interfaces.</li>
+                    <li>Backend Development: Robust systems for scalability and security.</li>
+                    <li>Maintenance and Support: Ongoing assistance post-launch.</li>
+                </ul>
+
                 <div className="m-button-container">
                     <button className="m-schedule-button" onClick={() => navigate("/schedule")}>Schedule a Conversation</button>
                 </div>
             </div>
         </div>
-
     );
 };
 

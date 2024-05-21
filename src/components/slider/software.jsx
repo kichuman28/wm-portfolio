@@ -1,4 +1,4 @@
-// src/pages/MobileApp.js
+// src/pages/Software.js
 import React from 'react';
 import '../style.css';
 import Header from '../header';
@@ -12,19 +12,34 @@ const Software = () => {
             <Header />
             <div className="m-content">
                 <h1 className="m-heading">
-                    <span className="m-custom">Custom</span> <br />
-                    <span className="m-mobile">SOFTWARE<br />DEVELOPMENT</span>
+                    <span className="m-custom">CUSTOM   </span>
+                    <span className="m-mobile">SOFTWARE DEVELOPMENT</span>
                 </h1>
                 <p className="m-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur libero ac ullamcorper bibendum. Donec eu blandit ipsum, a interdum felis. Fusce ut nisl enim. Vestibulum elementum ut quam sed fringilla. Nulla blandit id dolor tincidunt viverra. Donec gravida ut mi sed efficitur.Nam massa eros, bibendum in sapien et, vehicula accumsan ipsum. In aliquam ligula et justo semper dignissim. Duis accumsan mauris eu elementum posuere. In gravida euismod ex, quis gravida erat mollis sit amet. Sed quis fringilla leo. Ut nec dolor tellus.
-                    Cras posuere euismod porta. In arcu metus, tincidunt quis rhoncus non, tincidunt sit amet nibh. Praesent laoreet felis et libero feugiat, bibendum blandit felis vestibulum.
+                    At WHITE MATRIX, we craft custom software solutions tailored to your needs.
                 </p>
+                <h2 className="m-subheading">Our Approach</h2>
+                <ul className="m-list">
+                    <li>Personalized development for unique business needs.</li>
+                    <li>Collaboration with startups, SMEs, and enterprises.</li>
+                </ul>
+                <h2 className="m-subheading">Why Choose Us</h2>
+                <ul className="m-list">
+                    <li>Customization: Software that fits your business perfectly.</li>
+                    <li>Quality Assurance: Rigorous testing for reliability and security.</li>
+                    <li>Customer-Centric: Open communication and involvement.</li>
+                </ul>
+                <h2 className="m-subheading">Our Services</h2>
+                <ul className="m-list">
+                    <li>Custom Software Development: Web and mobile applications.</li>
+                    <li>UI/UX Design: Intuitive, user-friendly interfaces.</li>
+                </ul>
+
                 <div className="m-button-container">
                     <button className="m-schedule-button" onClick={() => navigate("/schedule")}>Schedule a Conversation</button>
                 </div>
             </div>
         </div>
-
     );
 };
 
