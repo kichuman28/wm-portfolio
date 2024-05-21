@@ -11,7 +11,7 @@ const MobileApp = () => {
             <Header />
             <div className="m-content">
                 <h1 className="m-heading">
-                    <span className="m-custom">Custom</span> <br />
+                    <span className="m-custom">CUSTOM</span> <br />
                     <span className="m-mobile">MOBILE APPLICATION DEVELOPMENT</span>
                 </h1>
                 <p className="m-paragraph">
