@@ -94,8 +94,6 @@ export const StyledBanner = styled.section`
     color: #fff; /* Change arrow color */
   }
 
-
-
   .slick-prev:hover:before,
   .slick-next:hover:before {
     color: #000; /* Change arrow color on hover */
@@ -109,15 +107,19 @@ export const StyledBanner = styled.section`
     right: -70px; /* Adjust as needed */
   }
 
+  /* Add custom styles for the dots */
+  .slick-dots li button:before {
+    color: white; /* Change the dot color to white */
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white; /* Ensure the active dot is also white */
+  }
 
   @media (max-width: 576px) {
-
     .slick-slide {
       padding: 20px;
     }
-
-
-
 
     .slick-prev { 
       left: -50px;
@@ -142,7 +144,6 @@ export const StyledBanner = styled.section`
       }
     }
   
-
     .image-overlay-button {
       font-size: 15px;
     }
