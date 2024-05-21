@@ -6,33 +6,29 @@ const DrawerContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 100vh; /* Change to full viewport height */
   background-color: rgba(16, 36, 71, 0.8);
   color: #fff;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the start for scrolling */
   align-items: center;
   padding: 20px;
   transition: transform 0.3s ease;
   transform: translateY(${props => (props.isOpen ? '0' : '-100%')});
+  overflow-y: auto; /* Enable vertical scrolling */
 
   @media (max-width: 768px) {
     padding: 10px;
-    height: auto;
-    min-height: 100vh;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 `;
 
 const Content = styled.div`
   text-align: center;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 40px;
   font-size: 1.2em;
+  flex: 1; /* Allow content to grow and take available space */
 
   @media (max-width: 768px) {
     margin-top: 40px;
@@ -45,11 +41,15 @@ const Content = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+`;
+
 const Button = styled.button`
   font-size: 1.2em;
-  position: absolute;
-  bottom: 100px;
-  right: 120px;
   background-color: #fff;
   color: #102447;
   border: none;
@@ -64,15 +64,11 @@ const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    position: static;
-    margin-top: 70px;
-    margin-left: 165px;
+    font-size: 1em;
   }
 
   @media (max-width: 576px) {
-    position: static;
-    margin-top: 5px;
-    margin-left: 165px;
+    font-size: 0.9em;
   }
 `;
 
@@ -100,7 +96,9 @@ const Drawer = ({ isOpen, onClose, content }) => {
       <Content>
         <p>{content}</p>
       </Content>
-      <Button onClick={onClose}>Know More</Button>
+      <ButtonContainer>
+        <Button onClick={onClose}>Know More</Button>
+      </ButtonContainer>
     </DrawerContainer>
   );
 };

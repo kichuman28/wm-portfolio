@@ -13,17 +13,17 @@ html {
 
 body {
   background: url(/public/assets/bg3.png) fixed;
-  /* Set background image as fixed */
   box-sizing: border-box;
-  /* Include padding in the element's total width and height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  /* background-repeat: no-repeat; */
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* min-height: 1000px;*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the component takes at least the full height of the viewport */
+  overflow-y: auto; /* Enables vertical scrolling */
 }
