@@ -8,11 +8,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 .c-file-input {
-    display: none; /* Hide the default file input */
+    display: none;
+    /* Hide the default file input */
 }
 
 .c-file-label {
@@ -27,7 +25,8 @@ body {
     transition: border-color 0.3s ease;
     cursor: pointer;
     text-align: center;
-    background-color: white; /* Match other input fields */
+    background-color: white;
+    /* Match other input fields */
     color: #333;
 }
 
@@ -164,6 +163,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .m-container::before {
@@ -260,6 +260,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .s-container::before {
@@ -287,6 +288,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .v-container::before {
@@ -315,6 +317,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .a-container::before {
@@ -323,16 +326,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150%;
+    height: 100%;
     background-color: #102447;
-    opacity: 80%;
+    opacity: 85%;
     z-index: 1;
+
 }
 
 .a-gmatrix-text {
     padding-left: 350px;
     color: white;
-    font-size: 10em; /* Adjust the size as needed */
+    font-size: 10em;
+    /* Adjust the size as needed */
     font-weight: bold;
     cursor: pointer;
 }
@@ -344,8 +349,10 @@ body {
 
 .a-gmatrix-g {
     color: transparent;
-    -webkit-text-stroke: 5px white; /* Creates a white border around the text */
-    font-size: 1.1em; /* Slightly larger for emphasis */
+    -webkit-text-stroke: 5px white;
+    /* Creates a white border around the text */
+    font-size: 1.1em;
+    /* Slightly larger for emphasis */
 }
 
 
@@ -404,7 +411,8 @@ body {
         padding-left: 350px;
         padding-right: 200px;
         color: white;
-        font-size: 5em; /* Adjust the size as needed */
+        font-size: 5em;
+        /* Adjust the size as needed */
         font-weight: bold;
         cursor: pointer;
     }
@@ -461,8 +469,9 @@ body {
     .s-container,
     .v-container,
     .a-container {
-        overflow: auto; /* Allows scrolling when the content overflows */
-        height: 100vh; /* Ensure the container takes the full height of the viewport */
+        /* Allows scrolling when the content overflows */
+        height: 100vh;
+        /* Ensure the container takes the full height of the viewport */
     }
 
     .m-list {
@@ -476,7 +485,7 @@ body {
         padding-left: 350px;
         padding-right: 350px;
         color: white;
-        font-size: 5em; 
+        font-size: 5em;
         font-weight: bold;
         cursor: pointer;
     }
@@ -530,5 +539,3 @@ body {
         margin-top: 40px;
     }
 }
-
-
