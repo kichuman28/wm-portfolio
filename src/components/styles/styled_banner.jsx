@@ -139,7 +139,7 @@ export const StyledBanner = styled.section`
       width: 100%; /* Ensure it takes up the full width */
     
       h2 {
-        font-size: 2rem; /* Adjust the size as needed */
+        font-size: 2rem; 
         color: #FFFFFF; 
       }
     }
