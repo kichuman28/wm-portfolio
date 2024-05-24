@@ -50,7 +50,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
     position: relative;
 }
 
@@ -60,7 +60,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-color: #102447;
     opacity: 85%;
     z-index: 1;
@@ -163,7 +163,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .m-container::before {
@@ -260,7 +260,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .s-container::before {
@@ -288,7 +288,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .v-container::before {
@@ -305,6 +305,8 @@ body {
 
 /* ai page styling */
 .a-container {
+    overflow-x: hidden;
+    width: 100%;
     padding-top: 120px;
     padding-right: 80px;
     display: flex;
@@ -317,7 +319,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .a-container::before {
@@ -326,7 +328,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150%;
     background-color: #102447;
     opacity: 85%;
     z-index: 1;
@@ -469,9 +471,7 @@ body {
     .s-container,
     .v-container,
     .a-container {
-        /* Allows scrolling when the content overflows */
         height: 100vh;
-        /* Ensure the container takes the full height of the viewport */
     }
 
     .m-list {
