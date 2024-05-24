@@ -149,6 +149,7 @@ export const StyledBanner = styled.section`
     }
 
     .slick-slider {
+      padding-top: 100px;
       width: 80%;
     }
 

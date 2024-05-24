@@ -1,56 +1,55 @@
 import React, { useState, useEffect } from 'react';
 import Header from './header';
 import Banner from './banner';
-import Drawer from './drawer'; // Import the Drawer component
+import Drawer from './drawer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const MyComponent = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to manage drawer visibility
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [settings, setSettings] = useState({
     dots: true,
-    arrows: window.innerWidth >= 576, // Disable arrows for screens smaller than 576px
+    arrows: window.innerWidth >= 576,
     infinite: true,
     speed: 250,
-    slidesToShow: 3,
+    slidesToShow: window.innerWidth >= 576 ? 3 : 4, // Initially show 3 slides, but 4 when screen width is 576px or larger
     slidesToScroll: 1,
-    vertical: window.innerWidth < 576, // Set vertical orientation based on screen width less than 576px
-    swipe: true , // Enable swipe gestures
-    swipeToSlide: true, // Enable swipe to slide
+    vertical: window.innerWidth < 576,
+    swipe: true,
+    swipeToSlide: true,
   });
 
   useEffect(() => {
     const handleResize = () => {
-      // Update settings based on window width
+      const isSmallScreen = window.innerWidth < 576;
       setSettings(prevSettings => ({
         ...prevSettings,
-        vertical: window.innerWidth < 576, // Set vertical orientation based on screen width less than 576px
-        arrows: window.innerWidth >= 576, // Disable arrows for screens smaller than 576px
+        vertical: isSmallScreen,
+        arrows: !isSmallScreen,
+        slidesToShow: isSmallScreen ? 4 : 3, // Show 4 slides when screen width is 576px or larger
       }));
     };
 
-    // Listen for window resize events
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once, on component mount
+  }, []);
 
   const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen); // Toggle drawer state
+    setIsDrawerOpen(!isDrawerOpen);
   };
 
   const closeDrawer = () => {
-    setIsDrawerOpen(false); // Close the drawer
+    setIsDrawerOpen(false);
   };
 
   return (
     <>
       <Header />
       <Banner settings={settings} />
-      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} /> {/* Render the Drawer component */}
+      <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
     </>
   );
 };
