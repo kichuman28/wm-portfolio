@@ -154,7 +154,7 @@ export const StyledBanner = styled.section`
 
     .slick-prev,
     .slick-next {
-      padding: 10px 5px; /* Adjust padding for smaller screens */
+      padding: 10px 5px; 
     }
   }
 `;
