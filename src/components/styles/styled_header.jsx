@@ -67,8 +67,8 @@ export const StyledHeader = styled.header`
         font-size: 20px;
 
         &:hover {
-          border-bottom: 2px solid #47bfbf;
-          color: #47bfbf;
+          border-bottom: 2px solid #102447;
+          color: #102447;
         }
       }
     }
@@ -118,7 +118,7 @@ export const StyledHeader = styled.header`
     &,
     &.sticky{
       padding: 5px 50px;
-      background: #47bfbf;
+      background: #102447;
       border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
 
@@ -132,7 +132,7 @@ export const StyledHeader = styled.header`
       text-align: center;
       height: 0;
       overflow: hidden;
-      background: #47bfbf;
+      background: #102447;
       visibility: hidden;
       opacity: 0;
       transition: max-height 0.5s ease, visibility 0.5s ease, opacity 0.5s ease;
