@@ -8,6 +8,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+
+
+
+
+
 .c-file-input {
     display: none;
     /* Hide the default file input */
@@ -304,6 +312,17 @@ body {
 }
 
 /* ai page styling */
+
+
+
+.a-paragraph {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: justify;
+    color: white;
+}
+
+
 .a-container {
     overflow-x: hidden;
     width: 100%;
@@ -404,6 +423,10 @@ body {
     .m-paragraph {
         font-size: 16px;
     }
+
+    .a-paragraph {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -459,6 +482,10 @@ body {
         font-size: 14px;
     }
 
+    .a-paragraph {
+        font-size: 14px;
+    }
+
     .m-schedule-button {
         font-size: 16px;
     }
@@ -497,6 +524,7 @@ body {
     }
 
     .m-list {
+        padding-left: 10px;
         font-size: 15px;
         margin-bottom: 8px;
         text-align: justify;
@@ -544,12 +572,22 @@ body {
         font-size: 24px;
     }
 
-    .m-custom,
+    .m-custom {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
     .m-mobile {
         font-size: 40px;
+        padding-left: 10px;
     }
 
     .m-paragraph {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .a-paragraph {
         font-size: 16px;
     }
 
