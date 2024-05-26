@@ -1,4 +1,3 @@
-// StyledHeader.js
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
@@ -10,13 +9,14 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 5px 80px;
+  padding: 0px 100px; /* Adjusted padding for consistency */
   z-index: 1000;
+  background: #102447; /* Set the default background color to opaque */
 
   &.sticky {
-    padding: 20px 100px;
-    background: #345789;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    /* Remove background change and padding adjustment in sticky class */
+    background: #102447;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .logo {
@@ -39,13 +39,12 @@ export const StyledHeader = styled.header`
     height: auto;
     margin-right: 10px;
     margin-top: 20px;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
   }
   
   img:hover {
-    transform: scale(1.2); /* Increase size on hover */
+    transform: scale(1.2);
   }
-  
 
   ul {
     position: relative;
@@ -67,21 +66,17 @@ export const StyledHeader = styled.header`
         font-size: 20px;
 
         &:hover {
-          border-bottom: 2px solid #102447;
-          color: #102447;
+          color: #47bfbf;
         }
       }
     }
   }
 
-
   .toggle {
     display: none;
   }
 
-  
   @media (max-width: 992px) {
-    /* Toggle button styles */
     .toggle {
       display: block;
       position: relative;
@@ -100,7 +95,7 @@ export const StyledHeader = styled.header`
       z-index: 1;
       box-shadow: 0 10px 0 #ffffff;
       transition: 0.5s;
-      border-radius: 2px; /* Add rounded edges */
+      border-radius: 2px;
     }
   
     .toggle::after {
@@ -112,18 +107,16 @@ export const StyledHeader = styled.header`
       background: #ffffff;
       z-index: 1;
       transition: 0.5s;
-      border-radius: 2px; /* Add rounded edges */
+      border-radius: 2px;
     }
   
     &,
-    &.sticky{
-      padding: 5px 50px;
+    &.sticky {
+      padding: 0px 50px; /* Consistent padding */
       background: #102447;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-
-  
     ul {
       position: absolute;
       top: 100px;
@@ -138,14 +131,14 @@ export const StyledHeader = styled.header`
       transition: max-height 0.5s ease, visibility 0.5s ease, opacity 0.5s ease;
     }
   
-    &.active ul{
+    &.active ul {
       height: auto;
       visibility: visible;
       opacity: 1;
       display: block;
       padding-top: 20px;
       max-height: 500px;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
   
     &.active ul li a {
@@ -155,24 +148,16 @@ export const StyledHeader = styled.header`
       color: #ffffff;
     }
   
-
     &.active ul li a:hover {
-      speed: 250;
-      border-bottom: 2px solid #345789;
-      color: #000;
+      speed: 500;
+      color: #47bfbf;
     }
-
 
     .sticky .logo,
     .sticky ul li a {
       color: #345789;
     }
-  }  
-  
-
-
   }
 `;
-
 
 export default StyledHeader;
