@@ -20,7 +20,7 @@ export const StyledBanner = styled.section`
     }
 
     @media (max-width: 576px) {
-      display: none;
+      padding-top: 80px;
     }
   }
 
@@ -149,7 +149,6 @@ export const StyledBanner = styled.section`
     }
 
     .slick-slider {
-      padding-top: 130px;
       width: 80%;
     }
 
